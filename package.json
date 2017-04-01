@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "storybook": "start-storybook -p 9001 -c .storybook",
+    "build":"build-storybook -s assets -o build -c .storybook"
   },
   "repository": {
     "type": "git",
@@ -20,5 +22,17 @@
   "bugs": {
     "url": "https://github.com/mymaytang/maytang.co-ui/issues"
   },
-  "homepage": "https://github.com/mymaytang/maytang.co-ui#readme"
+  "homepage": "https://github.com/mymaytang/maytang.co-ui#readme",
+  "devDependencies": {
+    "@kadira/storybook": "^2.35.3",
+    "autoprefixer-loader": "^3.2.0",
+    "babel-loader": "^6.4.1",
+    "css-loader": "^0.28.0",
+    "less": "^2.7.2",
+    "less-loader": "^4.0.3"
+  },
+  "dependencies": {
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2"
+  }
 }
