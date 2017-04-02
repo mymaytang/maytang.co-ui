@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "storybook": "start-storybook -p 9001 -c .storybook",
-    "build":"build-storybook -s assets -o build -c .storybook"
+    "build": "build-storybook -s assets -o build -c .storybook"
   },
   "repository": {
     "type": "git",
@@ -29,10 +29,12 @@
     "babel-loader": "^6.4.1",
     "css-loader": "^0.28.0",
     "less": "^2.7.2",
-    "less-loader": "^4.0.3"
+    "less-loader": "^4.0.3",
+    "webpack": "^2.3.2"
   },
   "dependencies": {
     "react": "^15.4.2",
-    "react-dom": "^15.4.2"
+    "react-dom": "^15.4.2",
+    "styled-components": "^1.4.4"
   }
 }
