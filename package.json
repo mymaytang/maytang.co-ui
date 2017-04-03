@@ -3,10 +3,14 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "engines": {
+    "node": "7.8.0"
+  },
   "scripts": {
     "test": "NODE_ENV=test&&node test",
     "storybook": "start-storybook -p 9001 -c .storybook",
-    "build": "build-storybook -s assets -o build -c .storybook"
+    "build": "build-storybook -s assets -o build -c .storybook",
+    "start": "node index"
   },
   "repository": {
     "type": "git",
@@ -34,9 +38,13 @@
   },
   "dependencies": {
     "@kadira/react-storybook-addon-info": "^3.4.0",
+    "fs": "0.0.1-security",
+    "http": "0.0.0",
     "moment": "^2.18.1",
+    "path": "^0.12.7",
     "react": "^15.4.2",
     "react-dom": "^15.4.2",
-    "styled-components": "^1.4.4"
+    "styled-components": "^1.4.4",
+    "url": "^0.11.0"
   }
 }
