@@ -3,5 +3,7 @@ applications:
   memory: 128M
   instances: 1
   path: .
+  env:
+    NODE_ENV: production
   buildpack: nodejs_buildpack
   commands: node index
