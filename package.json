@@ -29,6 +29,7 @@
   "homepage": "https://github.com/mymaytang/maytang.co-ui#readme",
   "devDependencies": {
     "@kadira/storybook": "^2.35.3",
+    "@kadira/storybook-addon-options": "^1.0.2",
     "autoprefixer-loader": "^3.2.0",
     "babel-loader": "^6.4.1",
     "css-loader": "^0.28.0",
