@@ -1,6 +1,6 @@
 applications:
 - name: maytang-ui
-  memory: 128M
+  memory: 512M
   instances: 1
   path: .
   env:
