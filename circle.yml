@@ -16,6 +16,7 @@ dependencies:
     - cf -v
   override:
     - npm install
+    - npm install getstorybook -g
     - npm run build
 
 test:
