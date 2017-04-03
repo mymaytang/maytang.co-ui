@@ -2,7 +2,5 @@ applications:
 - name: maytang-ui
   memory: 128M
   instances: 1
-  host: ui
-  domain: maytang.co
   path: .
   buildpack: nodejs_buildpack
