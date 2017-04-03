@@ -5,4 +5,4 @@ applications:
   host: ui
   domain: maytang.co
   path: .
-  buildpack: https://github.com/cloudfoundry/nodejs-buildpack.git
+  buildpack: nodejs_buildpack
