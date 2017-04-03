@@ -1,0 +1,8 @@
+applications:
+- name: maytang-ui
+  memory: 128M
+  instances: 1
+  host: ui
+  domain: maytang.co
+  path: .
+  buildpack: https://github.com/cloudfoundry/nodejs-buildpack.git
