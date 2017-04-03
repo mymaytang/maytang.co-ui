@@ -12,9 +12,9 @@ const Button = styled.button`
   border: 0;
   padding: 11px;
   box-shadow:
-  	0 0 0 1px #000,
-    0 0 0 4px #fff,
-  	0 0 0 5px #000;
+  	0 0 0 1px ${colors.black},
+    0 0 0 4px ${colors.white},
+  	0 0 0 5px ${colors.black};
   margin: 0rem;
   transition: all 0.25s;
 
