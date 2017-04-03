@@ -1,6 +1,5 @@
 import React from 'react'
 import { storiesOf, action } from '@kadira/storybook'
-import '../style/main.less'
 import styled from 'styled-components'
 import CtaButton from '../ui/CtaButton'
 
