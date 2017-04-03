@@ -1,9 +1,20 @@
 import React from 'react'
 import { storiesOf, action } from '@kadira/storybook'
-
+import '../style/main.less'
+import styled from 'styled-components'
 import CtaButton from '../ui/CtaButton'
+
+/**
+ * story wrapper
+ */
+const StoryWrapper = styled.div`
+  text-align: center;
+  padding: 20px;
+`
 
 storiesOf('Button', module)
   .add('with text', () => (
-    <CtaButton onClick={action('clicked')}>Hello</CtaButton>
+    <StoryWrapper>
+      <CtaButton onClick={action('clicked')}>sign up with email</CtaButton>
+    </StoryWrapper>
   ))

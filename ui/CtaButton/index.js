@@ -1,5 +1,7 @@
 import React from 'react'
+import Button from '../Core/Button'
 import './CtaButton.less'
+
 
 export default class CtaButton extends React.Component {
 
@@ -10,7 +12,7 @@ export default class CtaButton extends React.Component {
   render() {
     return (
       <div className='ctabutton__container'>
-        <button>{ this.props.children }</button>
+        <Button>{ this.props.children }</Button>
       </div>
     )
   }
