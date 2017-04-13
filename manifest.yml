@@ -6,4 +6,4 @@ applications:
   env:
     NODE_ENV: production
   buildpack: nodejs_buildpack
-  commands: node index
+  commands: node serve

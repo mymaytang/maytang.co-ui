@@ -1,5 +1,5 @@
 import React from 'react'
-import Button from '../Core/Button'
+import { Button } from '../Core'
 import './CtaButton.less'
 
 

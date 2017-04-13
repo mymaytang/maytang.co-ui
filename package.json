@@ -10,7 +10,8 @@
     "test": "NODE_ENV=test&&node test",
     "storybook": "start-storybook -p 9001 -c .storybook",
     "buildStorybook": "build-storybook -s assets -o build -c .storybook",
-    "start": "node index"
+    "postinstall":"webpack",
+    "start": "node serve"
   },
   "repository": {
     "type": "git",
@@ -50,10 +51,14 @@
     "styled-components": "^1.4.4"
   },
   "dependencies": {
+    "@kadira/react-storybook-addon-info": "^3.4.0",
+    "@kadira/storybook-addon-actions": "^1.1.3",
+    "@kadira/storybook-addon-knobs": "^1.7.1",
     "fs": "0.0.1-security",
     "http": "0.0.0",
     "moment": "^2.18.1",
     "path": "^0.12.7",
+    "react-storybook-addon-backgrounds": "0.0.7",
     "url": "^0.11.0"
   }
 }
