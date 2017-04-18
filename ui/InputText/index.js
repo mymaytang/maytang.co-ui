@@ -1,10 +1,10 @@
-import { Input, Label } from '../Core'
 import React from 'react'
+import { Input, Label } from '../Core'
 import './InputText.less'
 
 export default class InputText extends React.Component {
 
-  static propTypes = {
+  static defaultProps = {
     id: null,
     label: null
   }
