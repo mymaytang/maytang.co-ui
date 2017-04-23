@@ -10,7 +10,7 @@
     "test": "NODE_ENV=test&&node test",
     "storybook": "start-storybook -p 9001 -c .storybook",
     "buildStorybook": "build-storybook -s assets -o build -c .storybook",
-    "postinstall": "webpack",
+    "postinstall": "./node_modules/.bin/webpack",
     "start": "node serve"
   },
   "repository": {
