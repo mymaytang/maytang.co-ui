@@ -55,6 +55,11 @@ module.exports = {
           fallback: "style-loader",
           use: 'css-loader!less-loader!postcss-loader'
         })
+      },
+      {
+        test: /\.(jpg|png|gif)$/,
+        loaders: ['file-loader'],
+        include: path.resolve(__dirname, 'ui')
       }
     ]
   },
