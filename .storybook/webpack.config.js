@@ -8,6 +8,12 @@ module.exports = {
         loaders: ['style', 'css', 'less'],
         exclude: /node_modules/,
         include: path.resolve(__dirname, '../../')
+      },
+      {
+        test: /\.(jpg|png|gif)$/,
+        loaders: ['file-loader'],
+        exclude: /node_modules/,
+        include: path.resolve(__dirname, '../ui')
       }
     ]
   },

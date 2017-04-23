@@ -3,12 +3,15 @@ import { storiesOf, action } from '@kadira/storybook'
 import styled from 'styled-components'
 import CtaButton from '../ui/CtaButton'
 import InputText from '../ui/InputText'
+import Avatar from '../ui/Avatar'
+import Dropdown from '../ui/Dropdown'
+
 /**
  * story wrapper
  */
 const StoryWrapper = styled.div`
   text-align: center;
-  max-width: 250px;
+  width: ${props => props.width ? props.width + 'px' : '250px'};
   margin: 0 auto;
   padding: 20px;
 `
@@ -21,16 +24,51 @@ storiesOf('Button', module)
   .add('with text', () => (
     <StoryWrapper>
       <StoryInner>
-        <CtaButton onClick={action('clicked')}>sign up with email</CtaButton>
+        <CtaButton
+          width={250}
+          onClick={action('clicked')}>sign up with email</CtaButton>
       </StoryInner>
     </StoryWrapper>
   ))
 
 storiesOf('Input Text', module)
-  .add('default', () => (
+  .add('name input', () => (
     <StoryWrapper>
       <StoryInner>
-        <InputText label='First Name:'/>
+        <InputText
+          width={250}
+          label='First Name' placeholder='Your first name...'/>
     </StoryInner>
+    </StoryWrapper>
+  ))
+  .add('multi inputs', () => (
+    <StoryWrapper>
+      <StoryInner>
+        <InputText
+          width={250}
+          label='First Name' placeholder='Your first name...'/>
+        <InputText
+          width={250}
+          label='Last Name' placeholder='Your Last name...'/>
+
+    </StoryInner>
+    </StoryWrapper>
+  ))
+
+storiesOf('Avatar', module)
+  .add('no src image', () => (
+    <StoryWrapper width={70}>
+      <StoryInner>
+        <Avatar />
+      </StoryInner>
+    </StoryWrapper>
+  ))
+
+storiesOf('Dropdown', module)
+  .add('Basic', () => (
+    <StoryWrapper>
+      <StoryInner>
+        <Dropdown />
+      </StoryInner>
     </StoryWrapper>
   ))

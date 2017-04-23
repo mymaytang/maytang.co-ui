@@ -6,6 +6,12 @@ const Label = styled.label`
   font-style: normal;
   font-weight: 300;
   font-size: 1.6em;
+  padding-bottom: 7px;
+  text-transform: uppercase;
+
+  &:after {
+    content: ':';
+  }
 
   &:focus {
     outline: none;

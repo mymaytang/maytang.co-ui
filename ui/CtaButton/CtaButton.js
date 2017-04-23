@@ -5,14 +5,35 @@ import './CtaButton.less'
 
 export default class CtaButton extends React.Component {
 
+  static defaultProps = {
+    width: undefined
+  }
+
   constructor() {
     super()
   }
 
+  componentWillMount() {
+
+    let { width } = this.props
+
+    this.setState({
+      width: width
+    })
+  }
+
   render() {
+
+    let { width } = this.props
+
+    let style = {}
+
+    if(width !== undefined) style.width = width + 'px'
+
     return (
-      <div className='ctabutton__container'>
-        <Button>{ this.props.children }</Button>
+      <div style={style} className='ctabutton__container'>
+        <Button
+          className='ctabutton__button'>{ this.props.children }</Button>
       </div>
     )
   }
