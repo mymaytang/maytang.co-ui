@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="26px" height="25px" viewBox="0 0 26 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.2 (39069) - http://www.bohemiancoding.com/sketch -->
+    <title>Close button</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="ICONS" transform="translate(-122.000000, -207.000000)" stroke="#585858">
+            <g id="Close-button" transform="translate(123.000000, 207.000000)">
+                <path d="M0.414642047,0.416666667 L24.4638808,24.5833333" id="Line" stroke-linecap="square"></path>
+                <path d="M0.414642047,24.5833333 L24.4638808,0.416666667" id="Line" stroke-linecap="square"></path>
+                <rect id="Rectangle-4-Copy" transform="translate(12.245663, 12.305456) rotate(-315.000000) translate(-12.245663, -12.305456) " x="8.41616737" y="8.45482054" width="7.6589914" height="7.70127163"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

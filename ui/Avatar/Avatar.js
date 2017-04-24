@@ -8,7 +8,8 @@ export default class Avatar extends React.Component {
 
   static defaultProps = {
     radius: avatar.radius,
-    gapWidth: avatar.gapWidth
+    gapWidth: avatar.gapWidth,
+    style: {}
   }
 
   constructor() {
@@ -26,9 +27,9 @@ export default class Avatar extends React.Component {
 
   render() {
 
-    let { src, gapWidth } = this.props
+    let { src, gapWidth, style } = this.props
     let {radius} = this.state
-    let style = {}
+
     let imgStyle = {
       borderRadius: radius/2 + 'px',
       left: gapWidth - 1 + 'px',

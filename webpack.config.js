@@ -57,7 +57,7 @@ module.exports = {
         })
       },
       {
-        test: /\.(jpg|png|gif)$/,
+        test: /\.(jpg|png|gif|svg)$/,
         loaders: ['file-loader'],
         include: path.resolve(__dirname, 'ui')
       }

@@ -10,7 +10,7 @@ module.exports = {
         include: path.resolve(__dirname, '../../')
       },
       {
-        test: /\.(jpg|png|gif)$/,
+        test: /\.(jpg|png|gif|svg)$/,
         loaders: ['file-loader'],
         exclude: /node_modules/,
         include: path.resolve(__dirname, '../ui')
